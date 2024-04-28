@@ -44,7 +44,7 @@ export default function SelectedEmoji({ emoji, skinTone, closeFunc }) {
                     <span className={css["info"]}>Unicode:</span>{emoji.emoji}
                 </p>
                 <p>
-                    <span className={css["info"]}>Tags:</span>{emoji}
+                    <span className={css["info"]}>Tags:</span>{(()=>{ console.log(emoji) })()}
                 </p>
                 <p>
                     <span className={css["info"]}>Since:</span>Version {emoji.version}
